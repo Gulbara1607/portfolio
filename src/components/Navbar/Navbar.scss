@@ -1,0 +1,40 @@
+.nav {
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+
+    &__item {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+
+
+        &_list {
+            display: flex;
+            gap: 20px;
+
+            &_link {
+                color: #FFF;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px;
+                text-transform: capitalize;
+                display: inline-block;
+                transition: 0.4s;
+
+                &.router-link-active {
+                    color: #FE461C
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+}

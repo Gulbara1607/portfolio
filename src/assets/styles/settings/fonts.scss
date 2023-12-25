@@ -1,0 +1,12 @@
+$lora: ('Bold' 700),
+       ('Medium' 500),
+       ('Regular' 400);
+       
+@each $name, $weight in $lora {
+    @font-face {
+        font-family: 'Lora';
+        src: url('@/assets/fonts/Lora-#{$name}.ttf');
+        font-style: normal;
+        font-weight: $weight;
+    }
+}
